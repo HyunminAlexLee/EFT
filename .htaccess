@@ -1,0 +1,13 @@
+Options +SymLinksIfOwnerMatch
+RewriteEngine on
+
+
+
+RewriteCond %{REQUEST_FILENAME} test
+RewriteRule test/^(.*)$ test/$1 [R=301,NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^$   public/    [L]
+RewriteRule (.*) public/$1    [L]

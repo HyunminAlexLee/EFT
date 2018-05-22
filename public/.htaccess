@@ -1,0 +1,14 @@
+Options +FollowSymLinks
+Options -MultiViews
+
+RewriteEngine On
+
+RewriteBase /
+
+
+RewriteCond ${REQUEST_FILENAME} !-d
+RewriteCond ${REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !(\.css|\.js|\.ttf|\.woff|\.png|\.jpg|\.gif|\.svg|\.mp4|\.less|robots\.txt|\.ico|\.map)$ [NC]
+
+
+RewriteRule ^(.+)$ index.php?url=$1 [QSA]
