@@ -7,7 +7,7 @@ Class EftNewsModel extends Model
     }
 
 
-    public function getgallery($data,$page_size)
+    public function getnews($data,$page_size)
     {
     
   	$first_no = $data['first_no'];
@@ -21,7 +21,7 @@ Class EftNewsModel extends Model
     
     	return $result;
     }
-    public function getgalleryTotalRow()
+    public function getnewsTotalRow()
     {
     
     	$query = "
@@ -101,7 +101,7 @@ Class EftNewsModel extends Model
     public function updateEftNewsComment($data)
     {
     
-    	echo Helper::getArrayData($data);
+    	//echo Helper::getArrayData($data);
     	
     	$query = "INSERT INTO eft_news_comments ( `news_id`,`level`, `description`,  `create_user`, `create_date`) ".
     			"VALUES ( :news_id,:level,  :description, :create_user, NOW())";
