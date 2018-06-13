@@ -10,24 +10,40 @@
 
 	<!-- notice board 2-->
 	<div class="wow fadeInDown">
-	 <div class="container">
-          
+	     
 
           
 
-            <div class="row">
+            
                
-                   wreqrr
+                   EFT Video
 
-                   <div class="col-md-12">
-					<div id = "galleryList" >
-					<?php count ( $gallery['gallery'] )?>
-					<div class ="col-md-12 ">
+					<div id = "videoList" >
+					<?php count ( $eftVideosList )?>
+					
 					<?php
-					if (count ( $gallery['gallery'] ) > 0) {
+					if (count ( $eftVideosList ) > 0) {
+						?><div class="col-md-12">
+						<div class="col-md-1">번호</div>
+						<div class="col-md-7">제목</div>
+						<div class="col-md-2">등록일</div>
+						<div class="col-md-2">등록자</div>
+							</div>					
+						<?php 
 						
-						foreach ( $gallery['gallery'] as $gallery_data ) {
-							?><?=$gallery_data ['title']?>
+						
+						foreach ( $eftVideosList as $eftVideos ) {
+							?>
+							<div class="col-md-12">
+							<div class="col-md-1"><?=$eftVideos ['video_id']?></div>
+						<div class="col-md-7">
+						  <input type="button" class="j_button" value ="<?=$eftVideos ['title']?>" onClick="parent.location='/eftVideos/eftVideosDetail?video_id=<?=$eftVideos['video_id']?>'"> 
+                 
+						</div>
+						<div class="col-md-2"><?=$eftVideos ['create_date']?></div>
+						<div class="col-md-2"><?=$eftVideos ['create_user']?></div>
+							
+							</div>
 							
 							<?php 
 																
@@ -51,15 +67,15 @@
 					
 					?>
 					
-					</div>
+					
 					<div class ="col-xs-12 col-sm-12 col-md-12 m_page text-center">
 				<?php
 				
-				$page_list_size = $gallery ['page_list_size'];
-				$total_page = $gallery ['total_page'];
-				$current_page = $gallery ['current_page'];
-				$page_size = $gallery ['page_size'];
-				$first_no = $gallery ['first_no'];
+				$page_list_size = $videosPaging['page_list_size'];
+				$total_page = $videosPaging ['total_page'];
+				$current_page = $videosPaging ['current_page'];
+				$page_size = $videosPaging ['page_size'];
+				$first_no = $videosPaging ['first_no'];
 				//echo $page_list_size;
 				$start_page = floor ( ($current_page - 1) / $page_list_size ) * $page_list_size + 1;
 				//echo "<br/>start_page==>".$start_page;
@@ -102,19 +118,15 @@
 				?>	
 					</div>
 					
-					</div>
+					
 				</div>
 
               
-            </div>
-        </div>
+      
         	<input type = "hidden" id="nowpage" name="nowpage" value="0"/>
 	
 	</div>
-
+<div><!-- <input type="button" class="j_button" value ="UPDATE" onClick="parent.location='/eftVideos/eftVideosUpdate'"> --></div>
 </section>
-    <section id="portfolio">
-       
-    </section><!--/#portfolio-item-->
 </div>
 <!-- notice board -->

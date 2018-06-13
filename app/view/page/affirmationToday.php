@@ -1,16 +1,23 @@
- <div class="container">
-<section id="notice" class="col-sm-3">
 
-	<!-- notice board -->
+<div class="container">
+	<section id="menu" class="col-sm-3">	
+		<?php echo $menu;?>
+	</section>
+	<section id="affirmationToday" class="col-sm-9">
 
-	<?php echo $menu;?>
 
-</section>
-<section id="notice" class="col-sm-9">
+		<div class="wow fadeInDown alex-main-notice-form2">
+			<!-- background image -->
+			<div>
+				<!-- affirmation today-->
+				<div>
+					<?php echo $affirmationToday['title']; ?>
+					<?php echo $affirmationToday['content']; ?>
+				</div>
+				<!-- affirmation today-->
+			</div>
+			<!-- background image -->
+		</div>
 
-	<!-- notice board 2-->
-	<div class="wow fadeInDown alex-main-notice-form2">내용</div>
-
-</section>
+	</section>
 </div>
-<!-- notice board -->

@@ -21,12 +21,12 @@
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/animate.min.css" rel="stylesheet">
-    <link href="/css/main.css" rel="stylesheet">
-    <link href="/css/alex.css" rel="stylesheet">
+   
     <link href="/css/responsive.css" rel="stylesheet">
     <link href="/css/component.css" rel="stylesheet">
 	 <link href="/css/prettyPhoto.css" rel="stylesheet">
-
+ <link href="/css/main.css" rel="stylesheet">
+    <link href="/css/alex.css" rel="stylesheet">
    <script src="/js/jquery.js"></script>   
     <script src="/js/bootstrap.min.js"></script>
   
@@ -39,6 +39,9 @@
 	<body>
 	
 	  <header id="header">
+	  <div class="header_top_bar">
+	  </div>
+        
         <nav class="navbar navbar-inverse" role="banner">
             <div class="container">
                 <div class="navbar-header">
@@ -48,7 +51,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="../home/index"><img src="../images/logo_long2.png" alt="ILJOO"></a>
+                    <a class="navbar-brand" href="../home/index">ILJOO</a>
                 </div>
 				
                 <div class="collapse navbar-collapse navbar-right">

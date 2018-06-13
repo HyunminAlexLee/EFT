@@ -71,17 +71,38 @@
 	</a>
 </section>
 <!--/#main-slider-->
-<section id="notice" class="col-sm-6">
 
-	<!-- notice board -->
-
-
-	<div class="wow fadeInDown alex-main-notice-form"><a href="/eft/eft">EFT</a></div> 
-</section>
-<section id="notice" class="col-sm-6">
-	<!-- notice board 2-->
-	<div class="wow fadeInDown alex-main-notice-form2"><a href="/Affirmation/Affirmation">Affirmation</a></div>
-
+<section>
+<div class="box">
+  <div id="card-container">
+    <div id="card">
+      <div class="front face">
+        <img src="../images/main_page/main_eft.jpg"/>
+      </div>
+      <div class="back face">
+        <h1>EFT</h1>
+        <p class="artist">Emotion Free Technique</p>
+        <p class="date">Sarah's EFT</p>
+       <h2> <a href="../eft/eft">클릭하세요</a></h2>
+      </div>
+    </div>
+  </div>
+ 
+                       
+  <div id="card-container">
+    <div id="card3">
+      <div class="front face">
+        <img src="../images/main_page/main_affirmation.jpg"/>
+      </div>
+      <div class="back face">
+        <h1>Affirmation</h1>
+        <p class="artist">Affirmation</p>
+        <p class="date">Sarah's Affirmation</p>
+         <h2> <a href="../affirmation/affirmation">클릭하세요</a></h2>
+      </div>
+    </div>
+  </div>
+</div>
 </section>
  <section >
         <div class="container">

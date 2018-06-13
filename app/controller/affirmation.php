@@ -98,6 +98,17 @@ class AffirmationController extends Controller
     
     	$data['menu'] = Load::getContents('common/affirmationLeftMenu');
     
+    	
+    	
+    	
+    	 
+    	
+    	
+    	$affirmationModel = Load::Model ( 'affirmation' );
+    	
+    	$data['affirmationToday'] = $affirmationModel->getAffirmationToday ($data);
+    	
+    	
     	$templates = array('page/affirmationToday');
     
     	App::renderSubPage($templates, $data);

@@ -12,7 +12,7 @@
     margin-right: -10px;
   }
 
-  
+ 
 
 }
 
@@ -263,13 +263,9 @@
     display: none;
   }
 
-  #footer .col-sm-6{
-      text-align:center;
-  }
+ 
   
-   #footer .pull-right{
-      float: none !important;
-  }
+
 
   .sinlge-skill {
     margin: 0 auto;

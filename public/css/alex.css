@@ -1,10 +1,109 @@
 
-.alex-main-notice-form {
-	background : #ffff33;	
-	height:200px;
+.box {
+  width: 1000px;  
+  margin-top: 0px ; /*10%*/
+  margin-bottom: 0px;/*10%*/
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  
 }
 
-.alex-main-notice-form2 {
-	background : #fff455;	
-	height:200px;
+#card-container {
+  position: relative;
+  margin: 30px;
+  width: 400px;
+  height: 300px;
+  z-index: 1;
+  float: left;
+  perspective: 1000px;
 }
+
+img {
+  width: 400px;
+  height: 300px;
+}
+
+#card, #card2, #card3 {
+  width: 100%;
+  height: 100%;
+  margin: 10%;
+  transform-style: preserve-3d;
+  transition: all .8s linear;
+  box-shadow: 5px 5px 15px rgba(0,0,0, .3);
+}
+/*
+#card:hover {
+  
+    transform: rotateY(180deg);
+    box-shadow: -5px 5px 15px rgba(0,0,0, .3);
+ 
+}
+
+#card2:hover {
+  
+    transform: rotateY(-180deg);
+    box-shadow: -5px 5px 15px rgba(0,0,0, .3);
+  
+}
+*/
+
+#card3:hover,#card:hover  {
+  
+    transform: rotateX(180deg);
+    box-shadow: 5px -5px 15px rgba(0,0,0, .3);
+  }
+#card3 .back, #card .back {
+    transform: rotateX(-180deg);
+  
+}
+
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.back {
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+  opacity: .7;
+  background: #F9F3E4;
+}
+
+.box h1, p {
+ 
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.box h1 {
+  font-size: 1.2em;
+  padding-top: 15px;
+  color: #DD899E;
+}
+
+.box p {
+  font-size: .5em;
+}
+
+.box .date {
+  color: #D0B2AF;
+}
+
+/* left menu */
+.left-menu{
+
+	margin : 10% auto;
+	 font-size: 1em; 
+  	color: #000000;
+}
+
+
+
+
+
+

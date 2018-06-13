@@ -266,11 +266,18 @@ input.search-form:hover {
 .navbar {
   border-radius: 0;
   margin-bottom: 0;
-  /* background:#151515;*/
-  background: linear-gradient( to top, #ffffff, #408080  ) ;	
-  padding: 15px 0;
+   background:#ffffff;
+ /* background: linear-gradient( to top, #ffffff, #408080  ) ;*/	
+  padding: 0; /*15px 0*/
   padding-bottom: 0;
 	
+}
+
+.header_top_bar{
+	padding: 0;
+    margin:0;
+     background:#408080;
+    height:20px;	
 }
 
  .navbar-nav{
@@ -1619,16 +1626,6 @@ ul.social_icons li  a i{
   font-style: oblique;
 }
 
-.footer {
-  background: none repeat scroll 0 0 #2E2E2E;
-  border-top: 5px solid #C52D2F;
-  height: 84px;
-  margin-top: 110px;
-}
-
-.footer_left {
-  padding: 10px;
-}
 
 .text-left {
   color: #FFFFFF;
@@ -2613,11 +2610,14 @@ shortcodes page css
   margin-bottom: 0;
 }
 
-#footer {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  color: #fff;
-  background: #62b0b0;
+#footer { 
+  color: #fff; 
+  background: #62b0b0; 
+  height: 70px; 
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  width:100%;
 }
 
 #footer a {

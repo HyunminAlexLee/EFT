@@ -4,7 +4,7 @@
 class EftNewsController extends Controller
 {
     public $data=array();
-    public $page_size = 8;
+    public $page_size = 3;
     public $page_list_size = 5;
 
     public function eftNews()
@@ -27,15 +27,15 @@ class EftNewsController extends Controller
     	 
     	$pageModel = Load::Model ( 'eftNews' );
     	 
-    	$eftNewsList = $pageModel->getgallery ( $data, $this->page_size );
+    	$eftNewsList = $pageModel->getnews ( $data, $this->page_size );
     
     	   	
     	$data ['eftNewsList'] = $eftNewsList;
-    	$data ['newsPaging']['galleryTotalRow'] = $pageModel->getgalleryTotalRow ();
+    	$data ['newsPaging']['newsTotalRow'] = $pageModel->getnewsTotalRow ();
     	$data ['newsPaging']['page_list_size'] = $this->page_list_size;
     	$data ['newsPaging']['first_no'] = $first_no;
     	$data ['newsPaging']['page_size'] = $this->page_size;
-    	$data ['newsPaging']['total_page'] = $this->total_page ( $data['newsPaging']['galleryTotalRow'], $this->page_size );
+    	$data ['newsPaging']['total_page'] = $this->total_page ( $data['newsPaging']['newsTotalRow'], $this->page_size );
     	$data ['newsPaging']['current_page'] = $this->current_page ( $this->page_size, $first_no );
     	 
     	    	
