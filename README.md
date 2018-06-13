@@ -1,20 +1,25 @@
-# EFT ( Emotion Free Technique) For Web
+﻿# EFT ( Emotion Free Technique) For Web
 ##### Contributor
 * Jisung Lee
 
 ----
 
 ##### 개발 환경
+
 * PHP 5.5+
 * Apache 2.4+
 * MySQL
 * Xampp 3.2.2+
+* JQuery
+* JavaScript
+* Ajax
+* HTML5
+* CSS
+* Bootstrap 3.0.3
 
 -----
 
 ##### Email Credential
-For Webmail Access : [Gmail](https://poomat.awsapps.com/mail)
-
 Email | 
 ------ |
 jisung772@gmail.com | 
