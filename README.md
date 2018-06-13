@@ -26,7 +26,7 @@ jisung772@gmail.com |
 hyunmin.alex.lee@gmail.com | 
 
 ------
-### 필요 개발 목록
+### List of Development
 
 1.  **Main / Common Page**
   - [ ]  Header
